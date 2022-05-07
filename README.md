@@ -3,7 +3,7 @@ get data of website anvatchumanh.com to import wordpress website xusobanhkeo.com
 
 1. using http client to connect website
 2. create path to save file (SystemIO.StreamWrite).Ex: path="D:\\ crawl\test.txt"
-3. create format data. Ex: string format = "@ID@Type@SKU@Name@Published@Is featured?@Visibility in catalog@Short description@Description@Date sale price starts@Date sale price ends@Tax status@Tax class@In stock?@Stock@Low stock amount@Backorders allowed?@Sold individually?@Weight(kg)@Length(cm)@Width(cm)@Height(cm)@Allow customer reviews?@Purchase note@Sale price@Regular price@Categories@Tags@Shipping class@Images@Download limit@Download expiry days@Parent@Grouped products@Upsells@Cross-sells@External URL@Button text@Position@Attribute 1 name@Attribute 1 value(s)@Attribute 1 visible@Attribute 1 global@Attribute 1 default\n";
+3. create format data. Ex: string format = "@ID@Type@SKU@Name\n";
 4. write header of files. Ex: string header=format
 5. //prepare to write data in files
 6. Get list url of each product by Regex (pattern and match collection).Ex: MatchCollection matches = Regex.Matches(html, patternListLinkProduct, RegexOptions.Multiline);
