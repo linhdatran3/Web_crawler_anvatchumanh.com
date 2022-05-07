@@ -10,26 +10,21 @@ namespace Crawl1
     {
         string ID { get; set; }
         public string Name { get; set; }
-        string Description { get; set; }
-        bool IsAvailable { get; set; }
-        float Price { get; set; }
-        int Quantity { get; set; }
-        string Image { get; set; }
-        Category CategoryName { get; set; }
-        string priceCurrency { get; set; }
-        bool isNewProduct { get; set; }
+        public string Description { get; set; }
+        //bool IsAvailable { get; set; }
+        public float Price { get; set; }
+        //int Quantity { get; set; }
+        public List<string> Images { get; set; }
+        //public string Image { get; set; }
+      
+     
 
-        void printProduct(Product pro)
+        public void printProduct(Product pro)
         {
             Console.WriteLine(pro.ID);
             Console.WriteLine(pro.Name);
             Console.WriteLine(pro.Description);
             Console.WriteLine(pro.Price);
-            Console.WriteLine(pro.Quantity);
-            Console.WriteLine(pro.isNewProduct);
-            Console.WriteLine(pro.priceCurrency);
-            Console.WriteLine(pro.CategoryName);
-           
         }
 
     }
