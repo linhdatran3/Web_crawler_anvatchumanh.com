@@ -16,8 +16,6 @@ namespace Crawl1
         //int Quantity { get; set; }
         public List<string> Images { get; set; }
         //public string Image { get; set; }
-      
-     
 
         public void printProduct(Product pro)
         {
